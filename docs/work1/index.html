@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 제이쿼리 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- 테일윈드 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+
+
+<!-- full page css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
+<!-- full page js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+<!-- full page scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
+<!-- css,js 링크 -->
+<link rel="stylesheet" href="./index.css">
+<script src="index.js" defer></script>
+</head>
+<body>
+  <div class="site-wrap">
+    <div class="top-bar fixed top-0 z-50 flex bg-white w-full">
+      <a class="p-5 flex items-center ml-5 text-2xl" href="">JEUN</a>
+      
+      <nav class="menu-box-1 flex ml-auto">
+
+        <ul class="flex pr-7">
+          <li data-menuanchor="section-1">
+            <a class="h-full flex items-center p-5 px-8 top_bar_text" href="#section-1">HOME</a>
+          </li>
+          <li data-menuanchor="section-2">
+            <a class="h-full flex items-center p-5 px-8 top_bar_text" href="#section-2">ABOUTME</a>
+          </li>
+          <li data-menuanchor="section-3">
+            <a class="h-full flex items-center p-5 px-8 top_bar_text" href="#section-3">PORTFOLIO</a>
+          </li>
+        
+          <li data-menuanchor="section-6">
+            <a class="h-full flex items-center p-5 px-8 top_bar_text" href="#section-6">CONTECT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div id="fullpage" class="con-min-width">
+      <section class="section section-1" data-anchor="section-1">
+      <span>섹션1</span>
+      </section>
+  
+      <section class="section section-2" data-anchor="section-2">
+        <span>섹션2</span>
+      </section>
+      
+      <section class="section section-3" data-anchor="section-3">
+        <span>섹션3</span>
+      </section>
+      
+      <section class="section section-4" data-anchor="section-4">
+        <span>섹션4</span>
+      </section>
+      <section class="section section-5" data-anchor="section-5">
+        <span>섹션5</span>
+      </section>
+      <section class="section section-6" data-anchor="section-6">
+        <span>섹션6</span>
+      </section>
+      
+      <section class="section section-5 fp-auto-height fp-auto-height-responsive" data-anchor="section-5">
+        
+      </section>
+    </div>
+  </div>
+</body>
+</html>
+
