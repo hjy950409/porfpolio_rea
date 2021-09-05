@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>한지은 포토폴리오</title>
   <!-- 제이쿼리 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- 테일윈드 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+  <!-- 테일윈드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
 
 
 
-<!-- full page css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
-<!-- full page js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-<!-- full page scroll -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
+  <!-- full page css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
+  <!-- full page js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+  <!-- full page scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-<!-- css,js 링크 -->
-<link rel="stylesheet" href="./index.css">
-<script src="index.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <!-- css,js 링크 -->
+  <link rel="stylesheet" href="./index.css">
+  <script src="index.js" defer></script>
 </head>
+
 <body>
   <div class="site-wrap">
     <div class="top-bar fixed top-0 z-50 flex bg-white w-full">
       <a class="p-5 flex items-center ml-5 text-2xl" href="">JEUN</a>
-      
+
       <nav class="menu-box-1 flex ml-auto">
 
         <ul class="flex pr-7">
@@ -42,50 +44,258 @@
           <li data-menuanchor="section-3">
             <a class="h-full flex items-center p-5 px-8 top_bar_text" href="#section-3">PORTFOLIO</a>
           </li>
-        
+
           <li data-menuanchor="section-6">
             <a class="h-full flex items-center p-5 px-8 top_bar_text" href="#section-6">CONTECT</a>
           </li>
         </ul>
       </nav>
     </div>
-  
+
     <div id="fullpage" class="con-min-width">
       <section class="section section-1 relative overflow-hidden" data-anchor="section-1">
-        <div class="absolute inset-0 flex items-center justify-center text-11xl whitespace-nowrap border-text mousemove-effect-1-el" data-mousemove-effect1-hor-res="0.01" data-mousemove-effect1-ver-res="0.01">
+        <div
+          class="absolute flex items-center justify-center inset-0 text-11xl whitespace-nowrap border-text mousemove-effect-1-el"
+          data-mousemove-effect1-hor-res="0.01" data-mousemove-effect1-ver-res="0.01">
           Positive Mind,<br>
           cooperative,<br>
         </div>
-        <div class="relative z-1 h-full flex items-center justify-center whitespace-nowrap text-8xl select-none mousemove-effect-1-el" data-mousemove-effect1-hor-res="-0.01" data-mousemove-effect1-ver-res="-0.01">
+        <div
+          class="relative z-1 h-full flex items-center justify-center whitespace-nowrap text-8xl select-none mousemove-effect-1-el"
+          data-mousemove-effect1-hor-res="-0.01" data-mousemove-effect1-ver-res="-0.01">
           Web Designer,<br>
           Han Jieun
+
         </div>
-        
       </section>
-  
+
       <section class="section section-2" data-anchor="section-2">
-        <div class="name_wrap"><span class="name1">AboutMe</span></div>
+        <div class="container con">
+
+          <div class="-mt-18 mr-48">
+            <span class="name1 name_wrap flex justify-center items-start">AboutMe</span>
+          </div>
+          <div class="mt-10">
+
+            <div class="flex justify-evenly">
+              <div class="w-80 ">
+                <img class="w-80 h-96 block" src="./source/people.jpg" alt="">
+              </div>
+              <div>
+                <div class="flex mr-40">
+                  <div class="w-24 AboutMe_text_wrap ml-20">나는?</div>
+                  <div class="flex-1 introduce_con w-80">
+                    <span class="section_content">긍정적인 마인드</span>로 사는것을 목표로 하고 있습니다. 진취적인 성향과는 거리가 멀지만 <span
+                      class="section_content">포기하지 않는 것</span>을 목표로 최선을 다하는 것을 생각합니다. 6개월간 수업을 들으면서 <span
+                      class="section_content">UX,UI 웹페이지 디자인을 팀작업</span>으로 진행해본 경험이 있습니다.
+                  </div>
+                </div>
+                <div class="pl-24 mt-3 graph_box">
+                  <img class=" block graph_box  ml-20" src="./source/aboutMe 이미지.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-evenly -ml-52">
+            <div class=" mt-10">
+              <div class=" ">
+                <h1 class="w-24 text-right AboutMe_text_wrap">Profile</h1>
+                <ul class="mt-2">
+                  <li class="flex">
+                    <span class="w-24 text-right section_name">출생년도</span>
+                    <span class="ml-3 introduce_con">1995. 04. 09</span>
+                  </li>
+                  <li class="flex">
+                    <span class="w-24 text-right section_name">지역</span>
+                    <span class="ml-3 introduce_con">대전 광역시</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex">
+                <div class="w-80 flex ml-3 mt-3">
+                  <h1 class="w-24 text-right AboutMe_text_wrap">License</h1>
+                  <ul class="ml-3 mt-1">
+                    <li class="introduce_con">2017.02 컴퓨터활용능력 2급</li>
+                    <li class="introduce_con mt-1">2018.04 워드프로세서</li>
+                    <li class="introduce_con mt-1">2019.02 MOS Master </li>
+                    <li class="introduce_con mt-1">2021.07 웹디자인기능사 필기 </li>
+                    <li class="introduce_con mt-1">2021.04~10 디지털디자인 UI/UX 웹퍼블리셔 실무 양성과정 수료</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="flex justify-center w-80 ">
+              <div class="-ml-20 mt-10">
+                <h1 class="AboutMe_text_wrap">MY ABILITIES</h1>
+                <div>
+                  <ul class="skills">
+                    <li class="flex mt-2">
+                      <span class="section_content ml-12">HTML</span>
+                      <div class="progress-bar-box progress-bar-box-90 ml-2 "></div>
+                      <span class="progress-num-90 -ml-6  percent_text"></span>
+                    </li>
+                    <li class="flex mt-4">
+                      <span class="section_content ml-15 ">CSS</span>
+                      <div class="progress-bar-box progress-bar-box-80 ml-2"></div>
+                      <span class="progress-num-80 -ml-6 percent_text"></span>
+                    </li>
+                    <li class="flex mt-4">
+                      <span class="section_content ml-7b8">JQUERY</span>
+                      <div class="progress-bar-box progress-bar-box-65 ml-2"></div>
+                      <span class="progress-num-65 -ml-6 percent_text"></span>
+                    </li>
+                    <li class="flex mt-4">
+                      <span class="section_content ml-2">Photoshop</span>
+                      <div class="progress-bar-box progress-bar-box-65 ml-2"></div>
+                      <span class="progress-num-65 -ml-6 percent_text"></span>
+                    </li>
+                    <li class="flex mt-4">
+                      <span class="section_content">Illustrator</span>
+                      <div class="progress-bar-box progress-bar-box-70 ml-2"></div>
+                      <span class="progress-num-70 -ml-6 percent_text"></span>
+                    </li>
+                    <li class="flex mt-4">
+                      <span class="section_content ml-10">Figma</span>
+                      <div class="progress-bar-box progress-bar-box-70 ml-2"></div>
+                      <span class="progress-num-70 -ml-6 percent_text"></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
       </section>
-      
+
       <section class="section section-3" data-anchor="section-3">
-        <span>섹션3</span>
-      </section>
-      
-      <section class="section section-4" data-anchor="section-4">
-        <span>섹션4</span>
-      </section>
-      <section class="section section-5" data-anchor="section-5">
-        <span>섹션5</span>
-      </section>
-      <section class="section section-6" data-anchor="section-6">
-        <span>섹션6</span>
-      </section>
-      
-      <section class="section section-5 fp-auto-height fp-auto-height-responsive" data-anchor="section-5">
+
+        <div class="container con">
+
+          <div class="mr-48">
+            <h1 class="name1 name_wrap flex justify-center">Portfolio(Website)</h1>
+          </div>
+          <div class="flex justify-evenly">
+            <div class="flex-1  ">
+              <div class="w-96">
+                <img class="mockup_img block mt-52 ml-32" src="./source/portfoilo(website)목업.png" alt="">
+              </div>
+            </div>
+            <div class="flex flex-1"></div>
+            <div class="w-96  mt-52 mr-60"><span class="AboutMe_text_wrap">H사이트 웹페이지 리디자인</span><br>
+              <div class="mt-8">
+                <span class="ml-3 introduce_con ">기획 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+                <span class="ml-1 introduce_con">디자인 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+                <span class="ml-3 introduce_con">코딩 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+              </div>
+              <div class="pt-8 ml-4 introduce_con"><span class="">이건 설명이야
+                  아무에게도 고백하지<br> 않았던
+                  이야기를 들려주면
+                  큰 눈으로<br> 너는 묻지
+                  How wow wow Whatever<br>
+                  나 실은 말이야
+                  저기 아득한 미래로<br>부터 날아왔어
+                  쏟아질 듯이 빼곡한
+                </span>
+
+              </div>
+              <div class="check-box flex mt-10 -ml-14">
+                <div class="box-1 cursor-pointer flex "><a class="introduce_con ml-9 flex items-center"
+                    href="https://www.naver.com/" target="_blank">Web 바로가기</a></div>
+                <div class="box-1 box-2 cursor-pointer flex"><a
+                    class="whitespace-nowrap introduce_con ml-4 flex items-center"
+                    href="https://wiken.io/b/167/259?dummy=dummy&toastMsg=hanjieun%EB%8B%98%20%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.&toastMsgJsUnixTimestamp=1630298604027"
+                    target="_blank">모작페이지 바로가기</a></div>
+              </div>
+
+
+            </div>
+          </div>
         
-      </section>
     </div>
+
+    </section>
+
+    <section class="section section-4" data-anchor="section-4">
+      <div class="container con">
+      <div class="mr-48 "><span class="name_wrap name1 flex justify-center">Portfolio(ux,ui)</span></div>
+  <div class="flex justify-evenly mt-2">
+    <div class="flex-1">
+      <img class="mockup_img2 ml-32 mt-40 block" src="./source/portfolio(ux,ui).png" alt="">
+   
+    </div>
+       <div class="flex flex-1">
+       <div class="w-96 ml-20 mt-48"><span class="AboutMe_text_wrap ml-10">H애플리케이션 디자인</span><br>
+         <div class="flex justify-center w-full ">
+         <div class="mt-8 flex flex-1">
+                     <div class="w-40 -ml-20">
+<img src="https://picsum.photos/id/227/300/500" alt="">
+             
+           </div>
+          <div class="mt-auto mb-auto">
+        <span class="ml-10 introduce_con whitespace-nowrap">기획 :  2021.XX.XX ~ 2021.XX.XX</span><br>
+         <span class="ml-10 introduce_con whitespace-nowrap">디자인 :  2021.XX.XX ~ 2021.XX.XX</span><br>
+         <span class="ml-10 introduce_con whitespace-nowrap">코딩 :  2021.XX.XX ~ 2021.XX.XX</span><br>
+         <div class="pt-10 ml-10 introduce_con"><span class="">이건 설명이야 
+          아무에게도 고백하지<br> 않았던
+          이야기를 들려주면
+          큰 눈으로<br> 너는 묻지
+          How wow wow Whatever<br>
+          나 실은 말이야
+          저기 아득한 미래로<br>부터 날아왔어
+          쏟아질 듯이 빼곡한
+          </span>
+</div>
+ </div>
+          </div>
+    
+           
+         </div>
+         <div class="check-box flex mt-10 -ml-12">
+              <div class="box-1 cursor-pointer flex "><a class="introduce_con ml-11 flex items-center" href="https://www.naver.com/" target="_blank">작업 페이지</a></div>
+           <div class="box-1 box-2 cursor-pointer flex"><a class="whitespace-nowrap introduce_con ml-7 flex items-center" href="https://wiken.io/b/167/259?dummy=dummy&toastMsg=hanjieun%EB%8B%98%20%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.&toastMsgJsUnixTimestamp=1630298604027" target="_blank">프로세스 페이지</a></div>
+         </div>  
+      
+        </div>
+       </div>
+         
+      </div>
+    </section>
+    <section class="section section-5" data-anchor="section-5">
+      <div class="container con">
+        <!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1
+      </div>
+      <div class="swiper-slide">Slide 2
+      </div>
+      <div class="swiper-slide">Slide 3
+      </div>
+      <div class="swiper-slide">Slide 4
+      </div>
+      <div class="swiper-slide">Slide 5
+      </div>
+  </div>
+    <!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+      </div>
+    </section>
+    <section class="section section-6" data-anchor="section-6">
+      <span>섹션6</span>
+    </section>
+
+
+  </div>
   </div>
 </body>
-</html>
 
+</html>
