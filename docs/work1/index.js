@@ -2,7 +2,7 @@
 console.clear();
 
 /*풀페이지*/ 
-function Fullpage__init() {
+function Fullpageinit() {
   new fullpage('#fullpage', {
 
     scrollOverflow:true,
@@ -18,7 +18,13 @@ function Fullpage__init() {
   });
 }
 
-Fullpage__init();
+
+
+setTimeout(function() {
+   Fullpageinit();
+   $('.loading-box').addClass('hide');
+}, 1000);
+
 /*마우스에 반응하는 텍스트*/
 const $window = $(window);
 
