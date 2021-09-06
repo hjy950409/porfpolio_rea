@@ -18,7 +18,10 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
-
+ <!--로딩작업-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<!--스와이퍼-->
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
   <!-- full page css -->
@@ -35,8 +38,11 @@
 </head>
 
 <body>
+  <div class="loading-box z-50 flex items-center justify-center text-white text-4xl">
+    <i class="fas fa-spinner fa-spin"></i>
+  </div>
   <div class="site-wrap">
-    <div class="top-bar fixed top-0 z-50 flex bg-white w-full">
+    <div class="top-bar fixed top-0 z-40 flex bg-white w-full">
       <a class="p-5 flex items-center ml-5 text-2xl" href="">JEUN</a>
 
       <nav class="menu-box-1 flex ml-auto">
@@ -58,7 +64,7 @@
         </ul>
       </nav>
     </div>
-
+    
     <div id="fullpage" class="con-min-width">
       <section class="section section-1 relative overflow-hidden" data-anchor="section-1">
         <div
@@ -79,7 +85,7 @@
       <section class="section section-2" data-anchor="section-2">
         <div class="container con">
 
-          <div class="pt-20 name1 name_wrap flex justify-center items-start">
+          <div class=" name1 name_wrap flex justify-center">
             <h1 class="text-center">AboutMe</h1>
           </div>
           <div class="mt-10">
@@ -178,11 +184,11 @@
         </div>
       </section>
 
-      <section class="section section-3" data-anchor="section-3">
+      <section class="section section-3 pt-20" data-anchor="section-3">
 
         <div class="container con">
 
-          <div class="name1 name_wrap flex justify-center pt-20">
+          <div class="name1 name_wrap flex justify-center ">
             <h1 class="text-center">Portfolio(Website)</h1>
           </div>
           <div class="flex justify-evenly">
@@ -227,9 +233,9 @@
 
     </section>
 
-    <section class="section section-4" data-anchor="section-4">
+    <section class="section section-4 pt-20" data-anchor="section-4">
       <div class="container con">
-      <div class="pt-20 name_wrap name1 flex justify-center "><h1 class="text-center">Portfolio(ux,ui)</h1></div>
+      <div class=" name_wrap name1 flex justify-center "><h1 class="text-center">Portfolio(ux,ui)</h1></div>
   <div class="flex justify-evenly mt-2">
     <div class="flex-1">
       <img class="mockup_img2 ml-32 mt-40 block" src="./source/portfolio(ux,ui).png" alt="">
@@ -273,10 +279,10 @@
       </div>
       </div>
     </section>
-    <section class="section section-5" data-anchor="section-5">
+    <section class="section section-5 pt-20" data-anchor="section-5">
       <div class="container con">
-        <div class="name_wrap name1 flex justify-center items-start pt-20 "><h1 class="text-center">Design</h1></div>
-        <div class="flex justify-center items-center">
+        <div class="name_wrap name1 flex justify-center items-start "><h1 class="text-center">Design</h1></div>
+        <div class="flex justify-center items-center mt-40">
       <div class="swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -299,9 +305,9 @@
       </div>
     </div>
     </section>
-    <section class="section section-6" data-anchor="section-6">
+    <section class="section section-6 pt-20" data-anchor="section-6">
       <div class="container con">
-        <div class="mr-16 name_wrap name1 flex justify-center pt-20"><h1 class="text-center">Contect</h1></div>
+        <div class="mr-16 name_wrap name1 flex justify-center "><h1 class="text-center">Contect</h1></div>
         <div class="flex justify-center items-center mt-32">
         <form class="form-1" target="_blank" action="https://formspree.io/f/xzbykgda" onsubmit="sendEmailForm(this); return false;" method="POST">
           <div>
