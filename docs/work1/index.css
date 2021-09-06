@@ -317,8 +317,8 @@ margin-left:22px;
 }
 /*포토폴리오페이지*/
 .mockup_img{
-  width:600px;
-  height:400px;
+  width:200%;
+  height:200%;
 }
 .mockup_img2{
  width:300px;
@@ -333,8 +333,9 @@ margin-left:22px;
 }
 .swiper-container {
   position:relative;
-  width: 90vw;
+  width: 70vw;
   height: 300px;
+  overflow-x: hidden;
 }
 .swiper-container > .swiper-slide__content {
 position:absolute;
@@ -357,4 +358,28 @@ transform: scale(0.8);
 }
 .swiper-slide__content {
 height: 300px;
+}
+/*contect*/
+.form-1 input[type="email"] {
+  padding:5px;
+  border-radius:10px;
+  border:1px solid black;
+  outline:0;
+}
+
+.form-1 div {
+  margin-top:20px;
+}
+
+.form-1 textarea {
+  padding:5px;
+  border-radius:10px;
+  border:1px solid black;
+  outline:0;
+}
+
+
+.form-1 textarea::placeholder {
+  color:black;
+
 }
