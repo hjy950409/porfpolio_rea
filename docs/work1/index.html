@@ -32,6 +32,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+
+  <!--라이트박스-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
   <!-- css,js 링크 -->
   <link rel="stylesheet" href="./index.css">
   <script src="index.js" defer></script>
@@ -103,8 +108,9 @@
                       class="section_content">UX,UI 웹페이지 디자인을 팀작업</span>으로 진행해본 경험이 있습니다.
                   </div>
                 </div>
-                <div class="pl-24 mt-3 graph_box">
-                  <img class=" block graph_box  ml-20" src="./source/aboutMe 이미지.png" alt="">
+                <div class="pl-28 mt-3 graph_box">
+                  <img class=" block graph_box  ml-16 h-full xl\:z-20" src="./source/aboutMe 이미지 테스트.png"없는것.png alt="">
+             
                 </div>
               </div>
             </div>
@@ -287,16 +293,29 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1
+            <div class="swiper-slide relative cursor-pointer">
+               
+              <span class="absolute design_text">디자인1</span>   
+              <a href="https://picsum.photos/id/231/700/400" data-lightbox="image-1" data-title="마음에 드는 배너라서, 살짝 리디자인 해봤습니다.">
+                <img class=" inset-0" src="https://picsum.photos/id/231/700/400" alt="">
+              </a>
+       
             </div>
-            <div class="swiper-slide">Slide 2
+            <div class="swiper-slide z-50 cursor-pointer"><span class="absolute design_text">디자인2</span>  <a href="https://picsum.photos/id/232/700/300" data-lightbox="image-2" data-title="이미지 2 설명 ...">
+              <img class=" inset-0" src="https://picsum.photos/id/222/700/400" alt="">
+            </a>
             </div>
-            <div class="swiper-slide">Slide 3
+            <div class="swiper-slide z-50 cursor-pointer"><span class="absolute design_text">디자인3</span>  
+              <a href="https://picsum.photos/id/233/700/300" data-lightbox="image-3" data-title="이미지 3 설명 ...">
+                <img class=" inset-0" src="https://picsum.photos/id/233/700/400" alt="">
+              </a>
             </div>
-            <div class="swiper-slide">Slide 4
+            <div class="swiper-slide z-50 cursor-pointer"><span class="absolute design_text">디자인4</span>  
+              <a href="https://picsum.photos/id/234/700/300" data-lightbox="image-4" data-title="이미지 4 설명 ...">
+                <img class=" inset-0" src="https://picsum.photos/id/234/700/400" alt="">
+              </a>
             </div>
-            <div class="swiper-slide">Slide 5
-            </div>
+           
         </div>
           <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
@@ -307,17 +326,18 @@
     </section>
     <section class="section section-6 pt-20" data-anchor="section-6">
       <div class="container con">
-        <div class="mr-16 name_wrap name1 flex justify-center "><h1 class="text-center">Contect</h1></div>
+        <div class="mr-16 name_wrap name1 flex justify-center relative"><h1 class="text-center">Contect</h1></div>
         <div class="flex justify-center items-center mt-32">
         <form class="form-1" target="_blank" action="https://formspree.io/f/xzbykgda" onsubmit="sendEmailForm(this); return false;" method="POST">
           <div>
             <input autofocus type="email" name="_replyto" placeholder="당신의 이메일 주소를 입력해주세요.">
           </div>
-          <div>
+          <div class="flex">
             <textarea name="message" rows="13" cols="100" placeholder="내용을 입력해 주세요."></textarea>
           </div>
-  
+          <div class=" send_button section_content flex justify-end">
           <button type="button">Send</button>
+        </div>
       
 
          

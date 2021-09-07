@@ -81,13 +81,19 @@ margin-left:22px;
 }
 .top_bar_text{
   font-family: 'EliceDigitalBaeum_Bold';
-  font-size:12px;
+  font-size:14px;
 }
 
 .section_content{
   font-family: 'EliceDigitalBaeum_Bold';
   font-size:16px;
 }
+.design_text{
+  font-family: 'EliceDigitalBaeum_Bold';
+  font-size:25px;
+  color:black;
+}
+
 .AboutMe_text_wrap{
   font-family: 'Y_Spotlight';
     font-size:21.5px;
@@ -106,6 +112,7 @@ margin-left:22px;
 .box-2{
   margin-left:40px;
 }
+
 /*폰트*/
 @font-face {
     font-family: 'EliceDigitalBaeum_Bold';
@@ -377,6 +384,10 @@ margin-left:22px;
 .swiper-slide__content {
   height: 300px;
 }
+.swiper-slide  span:hover{
+
+  color:white;
+}
 /*contect*/
 .form-1 input[type="email"] {
   padding:5px;
@@ -400,4 +411,16 @@ margin-left:22px;
 .form-1 textarea::placeholder {
   color:black;
 
+}
+.send_button > button{
+  border:3px solid rgba(0,0,0,0.5);
+  color:block;
+  border-radius: 10px;
+  width:150px;
+  height:50px;
+
+}
+.send_button > button:hover{
+  background-color:rgba(0,0,0,0.5);
+  color:white;
 }
