@@ -360,6 +360,16 @@ margin-left:22px;
 .mockup_img2{
  width:300px;
 }
+.mpckup_video1{
+  position:absolute;
+  top:40%;
+  left:24.5%;
+} 
+.mpckup_video2{
+  position:absolute;
+  top:30%;
+  left:8.5%;
+} 
 /*design페이지*/
 .section-5{
   display:flex;
@@ -389,15 +399,12 @@ margin-left:22px;
   justify-content: center;
   transition: all 200ms linear;
   transform: scale(0.8);
-  
 }
 .swiper-slide.swiper-slide-active {
   transform: scale(1);
-
 }
 
 .swiper-slide__content {
-   
   height: 300px;
 }
 .swiper_box-2 {
@@ -469,4 +476,33 @@ margin-left:22px;
   background-color:rgba(0,0,0,0.5);
   color:white;
 }
+/*contact 팝업*/
 
+
+  
+}
+.contact_box1.active{
+  visibility:visible;
+  opacity:1;
+}
+
+.contact_box1{
+  position:absolute;
+  width:400px;
+  height:230px;
+ border:5px solid black;
+  transform:translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  visibility:hidden;
+  opacity:0;
+}
+
+
+.footer_text{
+  position:absolute;
+  top:70%;
+  left:25%;
+  margin-top:35px;
+}
+  
