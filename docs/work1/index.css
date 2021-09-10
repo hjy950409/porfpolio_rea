@@ -3,27 +3,39 @@
 
 
 .con-min-width {
-  width:1920px;
+  min-width:var(--site-content-width);
 }
-.section-1{
-  height:1410px;
+
+.con-max-width {
+  max-width:var(--site-max-width);
+  margin-left:auto;
+  margin-right:auto;
+}
+.img_con{
+  width:600px;
+  height:400px;
 }
 .con {
-  width:1430px;
+  width:var(--site-content-width);
   margin-left:auto;
   margin-right:auto;
   box-sizing:border-box;
-  padding:0 20px;
+  padding:0 var(--site-content-px);
+}
+
+/* 변수 */
+:root {
+  --site-max-width:1920px;
+  --site-content-width:1440px;
+  --site-content-px:20px;
+  --site-top-bar-height:130px;
 }
 
 .top-bar .menu-box-1 > ul > li.active {
   color:blue;
 }
 
-#fullpage .section.section-2 {
-  display:flex;
-  align-items:center;
-}
+
 
 
 /*라이브러리*/
@@ -143,11 +155,11 @@ margin-left:22px;
   transition:opacity 0.3s, visibility 0.3s;
   padding-top:0;
 }
-
 .loading-box.hide {
   opacity:0;
   visibility:hidden;
 }
+
 /*탑바*/
 .top-bar{
   z-index:100;
@@ -342,8 +354,8 @@ margin-left:22px;
 }
 /*포토폴리오페이지*/
 .mockup_img-box{
-  width:550px;
-  height:550px;
+  width:500px;
+  height:500px;
 }
 .mockup_img2{
  width:300px;
@@ -359,7 +371,8 @@ margin-left:22px;
 .swiper-container {
   position: relative;
   width: 70vw;
-  height: 300px;
+  height: 280px;
+  overflow:hidden;
 }
 
 .swiper-container > .swiper-slide__content {
@@ -376,10 +389,11 @@ margin-left:22px;
   justify-content: center;
   transition: all 200ms linear;
   transform: scale(0.8);
+  
 }
 .swiper-slide.swiper-slide-active {
   transform: scale(1);
-  background: #fc0;
+
 }
 
 .swiper-slide__content {

@@ -127,6 +127,12 @@ function sendEmailForm(form) {
   form.submit1.disabled = true;
 }
 
+$('.box-1').imagesLoaded(function() {
+  let $grid = $('.box-1').masonry();
+  
+  $('.loading-box').addClass('hide');
+});
+
 /*9월 17일(금) 1차발표
 9월 30일(목) 최종발표
 

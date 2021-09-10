@@ -12,17 +12,14 @@
   <!-- 테일윈드 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
 
-<!--swiper-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
- <!--로딩작업-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-<!--스와이퍼-->
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!--swiper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--로딩작업-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  <!--스와이퍼-->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
   <!-- full page css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
@@ -35,7 +32,7 @@
 
   <!--라이트박스-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
   <!-- css,js 링크 -->
   <link rel="stylesheet" href="./index.css">
@@ -44,7 +41,8 @@
 
 <body>
   <div class="loading-box z-50 flex items-center justify-center text-white text-4xl">
-    <i class="fas fa-spinner fa-spin"></i>
+    <!-- <img src="./source/Walk.gif" alt=""> -->
+    
   </div>
   <div class="site-wrap">
     <div class="top-bar fixed top-0 z-40 flex bg-white w-full">
@@ -69,9 +67,10 @@
         </ul>
       </nav>
     </div>
-    
+
     <div id="fullpage" class="con-min-width">
       <section class="section section-1 relative overflow-hidden" data-anchor="section-1">
+        
         <div
           class="absolute flex items-center justify-center inset-0 text-11xl whitespace-nowrap border-text mousemove-effect-1-el"
           data-mousemove-effect1-hor-res="0.01" data-mousemove-effect1-ver-res="0.01">
@@ -83,11 +82,11 @@
           data-mousemove-effect1-hor-res="-0.01" data-mousemove-effect1-ver-res="-0.01">
           Web Designer,<br>
           Han Jieun
-
         </div>
+      
       </section>
 
-      <section class="section section-2" data-anchor="section-2">
+      <section class="section section-2 pt-20" data-anchor="section-2">
         <div class="container con">
 
           <div class=" name1 name_wrap flex justify-center">
@@ -96,8 +95,8 @@
           <div class="mt-10">
 
             <div class="flex justify-evenly">
-              <div class="w-80 ">
-                <img class="w-80 h-96 block" src="./source/people.jpg" alt="">
+              <div class="">
+                <img class="w-80 h-96" src="./source/people.jpg" alt="">
               </div>
               <div>
                 <div class="flex">
@@ -109,13 +108,13 @@
                   </div>
                 </div>
                 <div class="pl-28 mt-3 graph_box">
-                  <img class=" block graph_box  ml-36 h-full " src="./source/aboutMe 이미지 테스트.png"없는것.png alt="">
-             
+                  <img class=" block graph_box  ml-36 h-full " src="./source/aboutMe 이미지 테스트.png" 없는것.png alt="">
+
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex justify-evenly -ml-52">
+          <div class="flex justify-evenly -ml-32">
             <div class=" mt-10">
               <div class=" ">
                 <h1 class="w-24 text-right AboutMe_text_wrap">Profile</h1>
@@ -198,158 +197,183 @@
             <h1 class="text-center">Portfolio(Website)</h1>
           </div>
           <div class="flex justify-evenly">
-            <div class="flex-1  ">
-              <div class="mockup_img-box">
-                <img class="block mt-28 ml-4 w-full h-full" src="./source/portfoilo(website)목업.png" alt="">
-              </div>
-            </div>
-            <div class="flex flex-1"></div>
             <div class="">
-            <div class="w-96 mr-10 mt-44"><span class="AboutMe_text_wrap">H사이트 웹페이지 리디자인</span><br>
-              <div class="mt-8">
-                <span class="ml-3 introduce_con ">기획 : 2021.XX.XX ~ 2021.XX.XX</span><br>
-                <span class="ml-1 introduce_con">디자인 : 2021.XX.XX ~ 2021.XX.XX</span><br>
-                <span class="ml-3 introduce_con">코딩 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+              <div class="mockup_img-box img_con ">
+                <img class="block mt-28 mr-10 w-full h-full" src="./source/portfoilo(website)목업.png" alt="">
               </div>
-              <div class="pt-8 ml-4 introduce_con"><span class="">이건 설명이야
-                  아무에게도 고백하지<br> 않았던
-                  이야기를 들려주면
-                  큰 눈으로<br> 너는 묻지
-                  How wow wow Whatever<br>
-                  나 실은 말이야
-                  저기 아득한 미래로<br>부터 날아왔어
-                  쏟아질 듯이 빼곡한
-                </span>
+            </div>
+            <div class="flex"></div>
+            <div class="">
+              <div class="w-96 ml-20 mt-44"><span class="AboutMe_text_wrap">H사이트 웹페이지 리디자인</span><br>
+                <div class="mt-8">
+                  <span class="ml-3 introduce_con ">기획 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+                  <span class="ml-1 introduce_con">디자인 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+                  <span class="ml-3 introduce_con">코딩 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+                </div>
+                <div class="pt-8 ml-4 introduce_con"><span class="">이건 설명이야
+                    아무에게도 고백하지<br> 않았던
+                    이야기를 들려주면
+                    큰 눈으로<br> 너는 묻지
+                    How wow wow Whatever<br>
+                    나 실은 말이야
+                    저기 아득한 미래로<br>부터 날아왔어
+                    쏟아질 듯이 빼곡한
+                  </span>
+
+                </div>
+                <div class="check-box flex mt-10 -ml-14">
+                  <div class="box-1 cursor-pointer flex "><a class="introduce_con ml-9 flex items-center"
+                      href="https://www.naver.com/" target="_blank">Web 바로가기</a></div>
+                  <div class="box-1 box-2 cursor-pointer flex"><a
+                      class="whitespace-nowrap introduce_con ml-4 flex items-center"
+                      href="https://wiken.io/b/167/259?dummy=dummy&toastMsg=hanjieun%EB%8B%98%20%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.&toastMsgJsUnixTimestamp=1630298604027"
+                      target="_blank">모작페이지 바로가기</a></div>
+                </div>
 
               </div>
-              <div class="check-box flex mt-10 -ml-14">
-                <div class="box-1 cursor-pointer flex "><a class="introduce_con ml-9 flex items-center"
-                    href="https://www.naver.com/" target="_blank">Web 바로가기</a></div>
-                <div class="box-1 box-2 cursor-pointer flex"><a
-                    class="whitespace-nowrap introduce_con ml-4 flex items-center"
-                    href="https://wiken.io/b/167/259?dummy=dummy&toastMsg=hanjieun%EB%8B%98%20%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.&toastMsgJsUnixTimestamp=1630298604027"
-                    target="_blank">모작페이지 바로가기</a></div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="section section-4 pt-20" data-anchor="section-4">
+        <div class="container con">
+          <div class=" name_wrap name1 flex justify-center ">
+            <h1 class="text-center">Portfolio(ux,ui)</h1>
+          </div>
+          <div class="flex justify-evenly mt-2">
+            <div class="relative">
+              <img class="mockup_img2 mr-20 mt-28 block " src="./source/portfolio(ux,ui).png" alt="">
+              <div class="mpckup_video absolute top-4 left-0">
+                <video id="myVideo" src="movie.mp4" controls autoplay></video>
               </div>
 
+
             </div>
+            <div class="flex">
+              <div class="">
+                <div class="w-96 ml-40 mt-40 "><span class="AboutMe_text_wrap ml-10">H애플리케이션 디자인</span><br>
+                  <div class="flex justify-center w-full ">
+                    <div class="mt-8 flex flex-1">
+                      <div class="w-40 -ml-20 ">
+                        <img src="https://picsum.photos/id/227/300/500" alt="">
+                        
+
+
+                      </div>
+                      <div class="mt-auto mb-auto">
+                        <span class="ml-10 introduce_con whitespace-nowrap">기획 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+                        <span class="ml-10 introduce_con whitespace-nowrap">디자인 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+                        <span class="ml-10 introduce_con whitespace-nowrap">코딩 : 2021.XX.XX ~ 2021.XX.XX</span><br>
+                        <div class="pt-10 ml-10 introduce_con"><span class="">이건 설명이야
+                            아무에게도 고백하지<br> 않았던
+                            이야기를 들려주면
+                            큰 눈으로<br> 너는 묻지
+                            How wow wow Whatever<br>
+                            나 실은 말이야
+                            저기 아득한 미래로<br>부터 날아왔어
+                            쏟아질 듯이 빼곡한
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="check-box flex mt-10 -ml-12">
+                    <div class="box-1 cursor-pointer flex "><a class="introduce_con ml-11 flex items-center"
+                        href="https://www.naver.com/" target="_blank">작업 페이지</a></div>
+                    <div class="box-1 box-2 cursor-pointer flex"><a
+                        class="whitespace-nowrap introduce_con ml-7 flex items-center"
+                        href="https://wiken.io/b/167/259?dummy=dummy&toastMsg=hanjieun%EB%8B%98%20%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.&toastMsgJsUnixTimestamp=1630298604027"
+                        target="_blank">프로세스 페이지</a></div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
-        
+      </section>
+      <section class="section section-5 pt-20" data-anchor="section-5">
+        <div class="container con">
+          <div class="name_wrap name1 flex justify-center">
+            <h1 class="text-center">Design</h1>
+          </div>
+          <div class="flex justify-center items-center mt-40">
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide  cursor-pointer ">
+
+                  <a class="swiper_box-2 w-full h-full" href="https://picsum.photos/id/231/450/300"
+                    data-lightbox="image-1" data-title="마음에 드는 배너라서, 살짝 리디자인 해봤습니다.">
+                    <img src="https://picsum.photos/id/231/450/300" alt="">
+                    <div class="design_text">디자인1</div>
+                  </a>
+
+                </div>
+                <div class="swiper-slide  cursor-pointer ">
+                  <a class="swiper_box-2" href="https://picsum.photos/id/232/450/300" data-lightbox="image-2"
+                    data-title="이미지 2 설명 ...">
+                    <img src="https://picsum.photos/id/222/450/300" alt="">
+                    <div class=" design_text">디자인2</div>
+                  </a>
+                </div>
+                <div class="swiper-slide  cursor-pointer">
+                  <a class="swiper_box-2" href="https://picsum.photos/id/233/450/300" data-lightbox="image-3"
+                    data-title="이미지 3 설명 ...">
+                    <img src="https://picsum.photos/id/233/450/300" alt="">
+                    <div class="design_text">디자인3</div>
+                  </a>
+                </div>
+                <div class="swiper-slide  cursor-pointer">
+                  <a class="swiper_box-2" href="https://picsum.photos/id/234/450/300" data-lightbox="image-4"
+                    data-title="이미지 4 설명 ...">
+                    <img src="https://picsum.photos/id/234/450/300" alt="">
+                    <div class="design_text">디자인4</div>
+                  </a>
+                </div>
+
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-6 pt-20" data-anchor="section-6">
+        <div class="container con">
+          <div class="mr-16 name_wrap name1 flex justify-center relative">
+            <h1 class="text-center">Contact</h1>
+          </div>
+          <div class="flex justify-center items-center mt-24 mr-5">
+            <form class="form-1" target="_blank" action="https://formspree.io/f/xzbykgda"
+              onsubmit="sendEmailForm(this); return false;" method="POST">
+              <div>
+                <input autofocus type="email" name="_replyto" placeholder="당신의 이메일 주소를 입력해주세요.">
+              </div>
+              <div class="flex">
+                <textarea name="message" rows="13" cols="95" placeholder="내용을 입력해 주세요."></textarea>
+              </div>
+              <div class=" send_button section_content flex justify-end">
+                <button type="button">Send</button>
+                <button class="ml-5" type="button">contact</button>
+              </div>
+
+
+
+
+            </form>
+          </div>
+        </div>
+      </section>
+
+
     </div>
-
-    </section>
-
-    <section class="section section-4 pt-20" data-anchor="section-4">
-      <div class="container con">
-      <div class=" name_wrap name1 flex justify-center "><h1 class="text-center">Portfolio(ux,ui)</h1></div>
-  <div class="flex justify-evenly mt-2">
-    <div class="flex-1">
-      <img class="mockup_img2 ml-32 mt-40 block" src="./source/portfolio(ux,ui).png" alt="">
-   
-    </div>
-       <div class="flex flex-1">
-         <div class="ml-16">
-       <div class="w-96 ml-20 mt-52 "><span class="AboutMe_text_wrap ml-10">H애플리케이션 디자인</span><br>
-         <div class="flex justify-center w-full ">
-         <div class="mt-8 flex flex-1">
-                     <div class="w-40 -ml-20">
-<img src="https://picsum.photos/id/227/300/500" alt="">
-             
-           </div>
-          <div class="mt-auto mb-auto">
-        <span class="ml-10 introduce_con whitespace-nowrap">기획 :  2021.XX.XX ~ 2021.XX.XX</span><br>
-         <span class="ml-10 introduce_con whitespace-nowrap">디자인 :  2021.XX.XX ~ 2021.XX.XX</span><br>
-         <span class="ml-10 introduce_con whitespace-nowrap">코딩 :  2021.XX.XX ~ 2021.XX.XX</span><br>
-         <div class="pt-10 ml-10 introduce_con"><span class="">이건 설명이야 
-          아무에게도 고백하지<br> 않았던
-          이야기를 들려주면
-          큰 눈으로<br> 너는 묻지
-          How wow wow Whatever<br>
-          나 실은 말이야
-          저기 아득한 미래로<br>부터 날아왔어
-          쏟아질 듯이 빼곡한
-          </span>
-</div>
- </div>
-          </div>
-    
-           
-         </div>
-         <div class="check-box flex mt-10 -ml-12">
-              <div class="box-1 cursor-pointer flex "><a class="introduce_con ml-11 flex items-center" href="https://www.naver.com/" target="_blank">작업 페이지</a></div>
-           <div class="box-1 box-2 cursor-pointer flex"><a class="whitespace-nowrap introduce_con ml-7 flex items-center" href="https://wiken.io/b/167/259?dummy=dummy&toastMsg=hanjieun%EB%8B%98%20%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.&toastMsgJsUnixTimestamp=1630298604027" target="_blank">프로세스 페이지</a></div>
-         </div>  
-      
-        </div>
-       </div>
-      </div>
-      </div>
-    </section>
-    <section class="section section-5 pt-20" data-anchor="section-5">
-      <div class="container con">
-        <div class="name_wrap name1 flex justify-center items-start "><h1 class="text-center">Design</h1></div>
-        <div class="flex justify-center items-center mt-40">
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide  cursor-pointer ">
-          
-              <a class="swiper_box-2 w-full h-full" href="https://picsum.photos/id/231/450/300" data-lightbox="image-1" data-title="마음에 드는 배너라서, 살짝 리디자인 해봤습니다.">
-                <img  src="https://picsum.photos/id/231/450/300" alt=""><div class="design_text">디자인1</div> 
-              </a>
-       
-            </div>
-            <div class="swiper-slide  cursor-pointer ">
-              <a class="swiper_box-2" href="https://picsum.photos/id/232/450/300" data-lightbox="image-2" data-title="이미지 2 설명 ...">
-              <img  src="https://picsum.photos/id/222/450/300" alt=""><div class=" design_text">디자인2</div>  
-            </a>
-            </div>
-            <div class="swiper-slide  cursor-pointer">
-              <a class="swiper_box-2" href="https://picsum.photos/id/233/450/300" data-lightbox="image-3" data-title="이미지 3 설명 ...">
-                <img  src="https://picsum.photos/id/233/450/300" alt=""><div class="design_text">디자인3</div>  
-              </a>
-            </div>
-            <div class="swiper-slide  cursor-pointer">
-              <a class="swiper_box-2" href="https://picsum.photos/id/234/450/300" data-lightbox="image-4" data-title="이미지 4 설명 ...">
-                <img src="https://picsum.photos/id/234/450/300" alt=""><div class="design_text">디자인4</div>  
-              </a>
-            </div>
-           
-        </div>
-          <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </div>
-    </section>
-    <section class="section section-6 pt-20" data-anchor="section-6">
-      <div class="container con">
-        <div class="mr-16 name_wrap name1 flex justify-center relative"><h1 class="text-center">Contact</h1></div>
-        <div class="flex justify-center items-center mt-32">
-        <form class="form-1" target="_blank" action="https://formspree.io/f/xzbykgda" onsubmit="sendEmailForm(this); return false;" method="POST">
-          <div>
-            <input autofocus type="email" name="_replyto" placeholder="당신의 이메일 주소를 입력해주세요.">
-          </div>
-          <div class="flex">
-            <textarea name="message" rows="13" cols="100" placeholder="내용을 입력해 주세요."></textarea>
-          </div>
-          <div class=" send_button section_content flex justify-end">
-          <button type="button">Send</button>
-          <button class="ml-5" type="button">contact</button>
-        </div>
-      
-
-         
-        
-        </form>
-      </div>
-        </div>
-    </section>
-
-
-  </div>
   </div>
 </body>
 
