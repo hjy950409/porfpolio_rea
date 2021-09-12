@@ -33,7 +33,8 @@
   <!--라이트박스-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-
+  <!--폰트어썸-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <!-- css,js 링크 -->
   <link rel="stylesheet" href="./index.css">
   <script src="index.js" defer></script>
@@ -69,8 +70,8 @@
     </div>
 
     <div id="fullpage" class="con-min-width">
-      <section class="section section-1 relative overflow-hidden" data-anchor="section-1">
-        
+      <section class="section section-1 relative overflow-hidden pt-16 ml-8" data-anchor="section-1">
+        <div class="section-1_wrap relative con container">
         <div
           class="absolute flex items-center justify-center inset-0 text-11xl whitespace-nowrap border-text mousemove-effect-1-el"
           data-mousemove-effect1-hor-res="0.01" data-mousemove-effect1-ver-res="0.01">
@@ -83,7 +84,7 @@
           Web Designer,<br>
           Han Jieun
         </div>
-      
+      </div>
       </section>
 
       <section class="section section-2 pt-20" data-anchor="section-2">
@@ -197,18 +198,18 @@
             <h1 class="text-center">Portfolio(Website)</h1>
           </div>
           <div class="flex justify-evenly">
-            <div class="">
-              <div class="mockup_img-box img_con ">
-                <img class="block mt-28 mr-10 w-full h-full relative" src="./source/portfoilo(website)목업.png" alt="">
+            <div class="mockup_img-box_wrap relative">
+              <div class="mockup_img-box img_con">
+                <img class="block" src="./source/portfoilo(website)목업.png" alt="">
                 <div class="mpckup_video1 absolute w-86">
-                  <video id="myVideo" src="movie.mp4" controls autoplay></video>
+                  <!-- <video id="myVideo" src="movie.mp4" controls autoplay></video> -->
                 </div>
   
               </div>
             </div>
             <div class="flex"></div>
             <div class="">
-              <div class="w-96 ml-28 mt-44"><span class="AboutMe_text_wrap">H사이트 웹페이지 리디자인</span><br>
+              <div class="w-96 ml-32 mt-36"><span class="AboutMe_text_wrap">H사이트 웹페이지 리디자인</span><br>
                 <div class="mt-8">
                   <span class="ml-3 introduce_con ">기획 : 2021.XX.XX ~ 2021.XX.XX</span><br>
                   <span class="ml-1 introduce_con">디자인 : 2021.XX.XX ~ 2021.XX.XX</span><br>
@@ -248,10 +249,10 @@
             <h1 class="text-center ">Portfolio(ux,ui)</h1>
           </div>
           <div class="flex justify-evenly mt-2">
-            <div class="relative">
-              <img class="mockup_img2 mr-20 mt-28 block " src="./source/portfolio(ux,ui).png" alt="">
+            <div class="mockup_img-box_wrap2 relative">
+              <img class="mockup_img2 absolute" src="./source/portfolio(ux,ui).png" alt="">
               <div class="mpckup_video2 absolute w-60">
-                <video id="myVideo" src="movie.mp4" controls autoplay></video>
+                <!-- <video id="myVideo" src="movie.mp4" controls autoplay></video> -->
               </div>
 
 
@@ -349,15 +350,14 @@
           </div>
         </div>
       </section>
-      <section class="section section-6 pt-20" data-anchor="section-6">
-        <div class="container con relative">
-          
-          <div class="mr-16 name_wrap name1 flex justify-center relative">
-            <h1 class="text-center">Contact</h1>
+      <section class="section section-6 relatvie  " data-anchor="section-6">
+       
+        <div class="container con w-full ">
+          <div class="mr-16 name_wrap name1 flex justify-center ">
+            <h1 class="text-center mt-20 ">Contact</h1>
           </div>
           <div class="flex justify-center items-center mt-24 mr-5">
-            <form class="form-1" target="_blank" action="https://formspree.io/f/xzbykgda"
-              onsubmit="sendEmailForm(this); return false;" method="POST">
+            <form class="form-1" target="_blank" action="https://formspree.io/f/xzbykgda" onsubmit="sendEmailForm(this); return false;" method="POST">
               <div>
                 <input autofocus type="email" name="_replyto" placeholder="당신의 이메일 주소를 입력해주세요.">
               </div>
@@ -366,29 +366,36 @@
               </div>
               <div class=" send_button section_content flex justify-end">
                 <button type="button">Send</button>
-                <button class="ml-5 contact_con" type="button">contact</button>
+                <button class="ml-5 btn-popup-1" type="button">contact
+                </button>
+        
               </div>
-
-
-
-
+        
             </form>
           </div>
-         
-         
-            <div class="contact_box1  absolute">
-              <div class="popup-top ml-3 mt-1"><span>JEUN</span></div>
-          <div class="popup_section relative">
-            <div class="footer_text  ">
-              <div class="footer_phone"><i class="fas fa-phone"><span class="ml-2">010.6850.3528</span></i></div>
-              <div class="footer_email"><i class="far fa-envelope"><span class="ml-2">hjy950409@naver.com</span></i></div>
-              <div class="footer_fbook"><i class="fab fa-facebook-square"><span class="ml-2">hjy950409@naver.com</span></i></div>
-          
-          
+          <div class="popup">
+        
+            <div class="popup__content">
+              <div class="popup_black">
+              <div class="popup__head flex">
+                    <div class="popup-top mr-auto inline-block w-10 cotact_popup_text"><span>JEUN</span></div>
+                <div class="popup__btn-close mt-0 ml-auto w-5 h-5"><i class="fab fa-buysellads"></i></div>
+              </div>
+              <div class="popup__body">
+                <div class="con">
+                  <div class="footer_text">
+                    <div class="footer_phone"><i class="fas fa-phone"><span class="ml-2 top_bar_text">010.6850.3528</span></i></div>
+                     <div class="footer_fbook"><i class="fab fa-facebook"><span class="ml-2 top_bar_text">hjy950409@naver.com</span></i></div>
+              <div class="footer_email"><i class="far fa-envelope"><span class="ml-2 top_bar_text">hjy950409@naver.com</span></i></div>
+             </div>
+                </div>
               </div>
             </div>
+              </div>
+          </div>
+        
         </div>
-      </div>
+        
       </section>
 
 

@@ -127,6 +127,17 @@ function sendEmailForm(form) {
   form.submit1.disabled = true;
 }
 
+
+/*팝업*/
+ $('.btn-popup-1').click(function() {
+  $('.popup').addClass('active');
+ });
+
+ $('.popup__btn-close').click(function() {
+   $('.popup').removeClass('active');
+ });
+
+
 $('.box-1').imagesLoaded(function() {
   let $grid = $('.box-1').masonry();
   
@@ -134,7 +145,10 @@ $('.box-1').imagesLoaded(function() {
 });
 
 
-/*팝업*/
+
+
+
+
 
 
 
