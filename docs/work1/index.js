@@ -129,13 +129,20 @@ function sendEmailForm(form) {
 
 
 /*팝업*/
- $('.btn-popup-1').click(function() {
-  $('.popup').addClass('active');
- });
-
- $('.popup__btn-close').click(function() {
-   $('.popup').removeClass('active');
- });
+function Popup__init() {
+  $('.btn-popup-1').click(function() {
+    $('.popup').addClass('active');
+  });
+  
+  $('.popup .popup__btn-close, .popup').click(function() {
+    $('.popup').removeClass('active');
+  });
+  
+  $('.popup .popup__content').click(function() {
+    return false;
+  });
+}
+Popup__init();
 
 
 $('.box-1').imagesLoaded(function() {
