@@ -177,8 +177,8 @@ margin-left:22px;
   left:0;
   width:100%;
   height:100%;
- 
-  z-index:10;
+  background-color:#fff;
+  z-index:1000;
   transition:opacity 0.3s, visibility 0.3s;
   padding-top:0;
 }
