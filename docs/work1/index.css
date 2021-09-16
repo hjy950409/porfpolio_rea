@@ -140,7 +140,18 @@ margin-left:22px;
 .box-2{
   margin-left:40px;
 }
+.section .inner-wrap {
+  min-height:100%;
+  display:flex;
+}
 
+.section .inner-wrap:not(.no-padding-top) {
+  padding-top:var(--site-top-bar-height);
+}
+
+.section .inner-wrap > .inner {
+  width:100%;
+}
 /*폰트*/
 @font-face {
     font-family: 'EliceDigitalBaeum_Bold';
@@ -166,7 +177,7 @@ margin-left:22px;
   left:0;
   width:100%;
   height:100%;
-  background-color:rgba(0,0,0,0.5);
+ 
   z-index:10;
   transition:opacity 0.3s, visibility 0.3s;
   padding-top:0;
@@ -178,7 +189,7 @@ margin-left:22px;
 
 /*탑바*/
 .top-bar{
-  z-index:100;
+  z-index:20;
   position:fixed;
   top:0;
   left:0;
@@ -198,7 +209,7 @@ margin-left:22px;
 }
 /*메인페이지*/
 .section-1_wrap{
-  width:1700px;
+  width:1500px;
   height:800px;
 }
 
@@ -406,13 +417,12 @@ top:100px;
   display:flex;
   align-items:center;
   justify-content:center;
-  height:100vh;
-  width:100vw;
+ 
 }
 .swiper-container {
   position: relative;
-  width: 70vw;
-  height: 280px;
+  width: 1200px;
+  height: 340px;
   overflow:hidden;
 }
 
@@ -422,8 +432,8 @@ top:100px;
 }
 
 .swiper-slide {
-  width:70%;
-  height: 100%;
+  width:500px;
+  height:350px;
   display: flex;
   background: #eee;
   align-items: center;
@@ -446,9 +456,12 @@ top:100px;
 
 .swiper_box-2 > img {
   display:block;
+  width:500px;
+  height:350px;
+
 }
 
-.swiper_box-2 >  div {
+.swiper_box-2 >  .design_text {
   position:absolute;
   top:0;
   left:0;
@@ -466,6 +479,7 @@ top:100px;
 .swiper_box-2:hover > div {
   color:white;
   background-color:rgba(0,0,0,0.5);
+ 
 }
 .swiper_img-box{
   width:700px;
@@ -514,7 +528,7 @@ top:100px;
   max-height:2000px;
 }
 .popup {
-  
+  z-index: 50;
   position:absolute;
   top:0;
   left:0;
@@ -582,4 +596,3 @@ top:100px;
   left:25%;
   margin-top:35px;
 }
-
