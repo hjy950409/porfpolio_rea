@@ -129,27 +129,27 @@ function sendEmailForm(form) {
 
 
 /*팝업*/
-function Popup__init() {
-  $('.btn-popup-1').click(function() {
-    $('.popup').addClass('active');
-  });
+// function Popup__init() {
+//   $('.btn-popup-1').click(function() {
+//     $('.popup').addClass('active');
+//   });
   
-  $('.popup .popup__btn-close, .popup').click(function() {
-    $('.popup').removeClass('active');
-  });
+//   $('.popup .popup__btn-close, .popup').click(function() {
+//     $('.popup').removeClass('active');
+//   });
   
-  $('.popup .popup__content').click(function() {
-    return false;
-  });
-}
-Popup__init();
+//   $('.popup .popup__content').click(function() {
+//     return false;
+//   });
+// }
+// Popup__init();
 
 
-$('.box-1').imagesLoaded(function() {
-  let $grid = $('.box-1').masonry();
+// $('.box-1').imagesLoaded(function() {
+//   let $grid = $('.box-1').masonry();
   
-  $('.loading-box').addClass('hide');
-});
+//   $('.loading-box').addClass('hide');
+// });
 
 
 
