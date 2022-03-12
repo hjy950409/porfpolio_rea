@@ -220,6 +220,10 @@ margin-left:22px;
   text-shadow: calc(var(--border-width) * -1) 0px 0 var(--color), calc(var(--border-width) * 1) 0px 0 var(--color), 0px calc(var(--border-width) * -1) 0 var(--color), 0px calc(var(--border-width) * 1) 0 var(--color);
 }
 /*aboutMe*/
+.my_pic{
+  white-space: nowrap;
+  
+}
 .graph_box{
   width:400px;
   height:250px;
@@ -385,16 +389,19 @@ margin-left:22px;
   content: counter(num);
 }
 /*포토폴리오페이지*/
+.section-5{
+  max-height: 1800px ;
+}
 .mockup_img-box_wrap{
-  width:500px;
-  height:500px;
+  width:400px;
+  height:400px;
   position: relative;
 }
 .mockup_img-box_wrap > .mockup_img-box{
   position:absolute;
   width:500px;
   height:430px;
-  top:130px;
+  top:100px;
   
 }
 .mockup_img-box_wrap2{
@@ -408,18 +415,28 @@ top:100px;
 }
 .mpckup_video1{
   position:absolute;
-  top:0;
-  left:0;
+  top:-8px;
+  left:13px;
   right:0;
   bottom:0;
-  width:490px;
-  height:310px;
+  width:468px;
+  height:290px;
   overflow: hidden;
 } 
+.mpck_img_1 {
+  position:absolute;
+  top:5px;
+  left:13px;
+  right:0;
+  bottom:0;
+  width:468px;
+  height:280px;
+  overflow: hidden;
+}
 .mpckup_video2{
   
   position:absolute;
-  top: 112px;
+  top:110px;
   left:36px;
   right:0;
   bottom:0;
@@ -427,10 +444,11 @@ top:100px;
   height:210px;
 } 
 /*design페이지*/
-.section-5{
+.section-6{
   display:flex;
   align-items:center;
   justify-content:center;
+  max-height: 1400px ;
  
 }
 .swiper-container {
@@ -524,9 +542,6 @@ top:100px;
   color:black;
 
 }
-.send_button {
-  margin-left:500px;
-}
 .send_button > button{
   border:3px solid rgba(0,0,0,0.5);
   color:block;
@@ -542,9 +557,10 @@ top:100px;
 
 
 /*contact*/
-.section-6{
+.section-7{
   max-height:2000px;
 }
+
 /* .popup {
   z-index: 50;
   position:absolute;
